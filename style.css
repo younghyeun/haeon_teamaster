@@ -32,7 +32,7 @@ body, html {
 
 .button-image {
     width: 60vw; /* 버튼 너비를 화면 너비의 15%로 설정 */
-    min-width: 400px; /* 최소 너비를 설정하여 너무 작아지지 않도록 함 */
+    min-width: 200px; /* 최소 너비를 설정하여 너무 작아지지 않도록 함 */
     height: auto; /* 세로 비율 유지 */
     transition: transform 0.3s ease, opacity 0.3s ease; /* 호버 효과 */
 }
