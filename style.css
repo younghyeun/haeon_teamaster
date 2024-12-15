@@ -1,0 +1,55 @@
+/* 기본 스타일 초기화 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 이미지 컨테이너 */
+.image-container {
+    position: relative; /* 버튼 배치를 위한 기준점 */
+    width: 100%;
+    min-height: 100vh; /* 화면 크기보다 적어도 1배 높이 */
+    overflow-y: auto; /* 세로 스크롤 허용 */
+}
+
+/* 배경 이미지 스타일 */
+.fullscreen-image {
+    width: 100%;
+    height: auto; /* 세로 비율 유지하면서 너비에 맞춰 이미지 크기 조정 */
+    object-fit: cover; /* 화면을 채우되 비율 유지 */
+    display: block; /* 이미지의 하단에 여백을 없애기 위해 */
+}
+
+/* 공통 버튼 스타일 */
+.button-link {
+    position: absolute;
+    display: inline-block;
+    transform: translateX(-50%); /* 가로 중앙 정렬 */
+}
+
+.button-image {
+    width: 60vw; /* 버튼 너비를 화면 너비의 15%로 설정 */
+    min-width: 400px; /* 최소 너비를 설정하여 너무 작아지지 않도록 함 */
+    height: auto; /* 세로 비율 유지 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 호버 효과 */
+}
+
+.button-link:hover .button-image {
+    transform: scale(1.1); /* 확대 효과 */
+}
+
+/* 첫 번째 버튼 위치 */
+.button-one {
+    top: 36%; /* 화면 높이의 36% 위치 */
+    left: 50%;  /* 가로 중앙 */
+}
+
+/* 두 번째 버튼 위치 */
+.button-two {
+    top: 89%; /* 화면 높이의 88% 위치 */
+    left: 50%;  /* 가로 중앙 */
+}
+
